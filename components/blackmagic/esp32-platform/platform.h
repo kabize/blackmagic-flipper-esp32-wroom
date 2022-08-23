@@ -33,12 +33,12 @@ void led_set_blue(uint8_t value);
 #define TCK_PIN (-1)
 
 #undef PLATFORM_HAS_TRACESWO
-#define TRACESWO_PIN 18
+#define TRACESWO_PIN 14
 
 // ON ESP32 we dont have the PORTS, this is dummy value until code is corrected
 #define SWCLK_PORT (0)
-#define SWCLK_PIN (1)
-#define SWDIO_PIN (2)
+#define SWCLK_PIN (15)
+#define SWDIO_PIN (27)
 
 #if SWDIO_PIN >= 32 || SWCLK_PIN >= 32
 #error To support pins greater than 31, change the platform_gpio functions
